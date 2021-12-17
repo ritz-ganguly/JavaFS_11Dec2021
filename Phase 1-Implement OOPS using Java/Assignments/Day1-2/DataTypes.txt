@@ -1,0 +1,17 @@
+DataType              wrapperClass                Size                   Range
+
+1) byte               Byte                        1 byte                 -128 to 127
+
+2) short              Short                       2 bytes                -32768 to 32767
+
+3)int                 Integer                     4 bytes                -2147483648 to 2147483647
+
+4)long                Long                        8 bytes                -9223372036854775808 to 9223372036854775807
+
+5)char                Character                   2 bytes                 
+
+6)boolean             Boolean                                             true and false
+
+7)float               Float                       4 bytes                 1.4E-45 to 3.4028235E38
+
+8)double              Double                      8 bytes                 4.9E-324 to 1.7976931348623157E308

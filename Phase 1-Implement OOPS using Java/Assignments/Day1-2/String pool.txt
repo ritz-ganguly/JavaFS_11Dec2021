@@ -1,0 +1,29 @@
+String pool is nothing but a storage area in Java heap where string literals stores. It is also known as String Intern Pool or String Constant Pool. It is just like object allocation. By default, it is empty and privately maintained by the Java String class. Whenever we create a string the string object occupies some space in the heap memory. Creating a number of strings may increase the cost and memory too which may reduce the performance also.
+
+
+When we create a new string literal without using the new key word, String literals are stored in the String pools. This is done to minimize the mewmory cost. So if 2 literals re having the same contents, instead of two separate string literals, one String literal is created and the two Strings variables refer two the same literal.
+
+But when we use new Keyword, the two String literals are stored separately instead of using the String pool.
+
+example)
+String name1= "abc";
+String name2="abc";
+if(name1==name2)
+   print("Equal");
+else
+   print("unequal");
+
+ the answer will be equal since name1 and name2 points to the same "abc".
+
+but if we do:
+
+String name1= new String("abc");
+String name2= new String("abc");
+if(name1==name2)
+   print("Equal");
+else
+   print("unequal");
+
+
+Now the answer will be unequal because in two separate memory locations "abc" will be stored.
+ 

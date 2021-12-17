@@ -1,0 +1,1 @@
+In terms of speed, Java is faster than Python as it is a strongly typed Language. Java does not have to determine the data type at run time making it fast. Python is an interpreted language and it determines the type of data at run time which makes it slower comparatively.

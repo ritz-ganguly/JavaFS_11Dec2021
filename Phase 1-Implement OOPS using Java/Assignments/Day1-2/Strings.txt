@@ -1,0 +1,4 @@
+Before discussing about Strings, it will be good to discuss how other primitive datatypes and Strings stored in memeory. Other than 
+strings, all other primitive data types are stored in Stack. This is because there is a range for every other primitive types. So as long as the new assigned value falls inside that range, Java can reassign the variable with the new value in stack itself. However the above logic does not hold for Strings. Strings do not have a fixed size and depend on the value. so if the new assigned value is larger than the contiguous memory available in Stack, it will create a problem. For this reason, Strings are stored in heap memory. 
+
+So when a String variable is assigned a new value, Java creates another new String object and assign the new value. This is because if the String do not  create a new String object, there might not be enough contiguous space in the memory to accomodate the new value. For this reason, Strings are immutable.
