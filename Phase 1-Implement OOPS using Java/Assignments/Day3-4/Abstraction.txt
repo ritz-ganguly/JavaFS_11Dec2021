@@ -1,0 +1,18 @@
+Abstraction is nothing but implementation hiding.abstraction is a process of hiding the implementation details from the user, only the functionality will be provided to the user. In other words, the user will have the information on what the object does instead of how it does it.
+
+In Java, abstraction is achieved using Abstract classes and interfaces.
+
+
+Example:
+
+public abstract class TwoDFigure{
+public abstract double area();
+public abstract double perimeter();
+
+}
+
+Here TwoDFigure is an abstraction where it provides a template as what has to be done instead of providing how it is done. The classes like Rectangle, Square etc which provides implementation of TwoDFigure tells how the implementations are  done.
+
+
+Similarly, TwoDFigure can be declared an interface as well to achieve abstraction.
+

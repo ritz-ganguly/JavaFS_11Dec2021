@@ -1,0 +1,20 @@
+The variables inside a interface are final and static in nature and must be initialized inside the interface.
+
+
+After JDK 8, we can have default concrete methods in an interface. It is also called extension methods. The implementations of this type of methods by a class that immplements the interface is optional.
+
+Example)
+
+public interface MyIF{
+int getNumber(); // traditional interface methods
+
+default String getString(){
+
+return "Default String";
+}
+
+}
+
+
+After JDK 8, interface can also have static methods. To call it, we have to use: interfacename.staticmethodname;
+Static interface methods are not inherited by either an implementing class or a subinterface.
